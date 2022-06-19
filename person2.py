@@ -5,23 +5,26 @@ class Person:
         self.profession = profession
         self.study = study
 
-    def work(self):
-        print(f'{self.name} working as a {self.profession}')
+    def work(self): #metode นับแค่บรรทัดนี้บรรทัดเดียว
+        print(f'{self.name} working as a {self.profession}') 
 
-    def show(self):
+    def show(self): #metode นับแค่บรรทัดนี้บรรทัดเดียว 
         print(f'Name: {self.name} Gender: {self.gender} profession: {self.profession} Study: {self.study}')
 
-#peron1
-jessa = Person('Jessa','Female','Software Engineer',0)
-jessa.work()
-jessa.show()
+    def __del__(self):
+        print("Object was destroyed")
+if __name__=="__main__":
+    #peron1
+    jessa = Person('Jessa','Female','Software Engineer',0)
+    jessa.work()
+    jessa.show()
 
-#peron2
-jon = Person('Jon','Male','Docter',15)
-jon.work()
-jon.show()
+    #peron2
+    jon = Person('Jon','Male','Docter',15)
+    jon.work()
+    jon.show()
 
-#peron3
-lisa = Person('Lisa','Female','Singer',10)
-lisa.work()
-lisa.show()
+    #peron3
+    lisa = Person('Lisa','Female','Singer',10)
+    lisa.work()
+    lisa.show()
