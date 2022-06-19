@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
 #เขียนแบบที่2
     class Student :
-        def __init__(self,id,name,major):
+        def __init__(self,id:str,name:str,major="it") -> None:
             self.id = id
             self.name = name
             self.major = major
@@ -42,9 +42,13 @@ if __name__ == "__main__":
     if __name__ == "__main__":
 
         #person1
-        my_student = Student(111,"jessica","it")
-        my_student.didplay_detail()
+        jessica = Student(111,"jessica","it")
+        jessica.didplay_detail()
 
         #person2
-        my_student = Student(112,"john","mkt")
-        my_student.didplay_detail()
+        john = Student(112,"john","mkt")
+        john.didplay_detail()
+
+        #person3
+        jame = Student(112,"jame",)
+        jame.didplay_detail()
