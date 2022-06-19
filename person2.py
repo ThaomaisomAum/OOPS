@@ -1,5 +1,5 @@
 class Person:
-    def __init__(self,name:str,gender:str,profession:int) -> None:
+    def __init__(self,name:str,gender:str,profession:int,study:int) -> None:
         self.name = name
         self.gender = gender
         self.profession = profession
@@ -13,7 +13,8 @@ class Person:
 
     def __del__(self):
         print("Object was destroyed")
-if __name__=="__main__":
+
+if __name__ == "__main__":
     #peron1
     jessa = Person('Jessa','Female','Software Engineer',0)
     jessa.work()
