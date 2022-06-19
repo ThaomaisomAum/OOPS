@@ -1,0 +1,30 @@
+class Bird:
+    global bird_type #global variable #ถ้าไม่ใช่คำว่า global ตัวแปร bird_type จะกลายเป็น class veriable
+    bird_type = 'porrot'
+    bird_name = 'Lori' #class variable
+
+
+    def __init__(self,color) -> None:
+        self.color = color #instance variable
+        name = 'peter' #local variable
+        print(f'{name} in init') #call local variable
+
+if __name__ == '__main__':
+    my_bird = Bird('Green,Blue')
+
+    #call instance variable ชื่อวัตถุ .instance variable
+    print(my_bird.color)
+
+     #call class variable #ชื่อคลาส class_variable
+    print(Bird.bird_name)
+
+    #call global variable #เรียกชื่อตัวแปรได้เลย
+    print(bird_type)
+
+    #case error
+    #พยามเรียก local variable
+    #print(name)#Name Error: name 'name' is not defined
+    #พยามเรียก global variable ผ่าน class
+    #print (Bird.bird_type)
+    #type object 'Bird has on attribute 'bird_type'.
+    
