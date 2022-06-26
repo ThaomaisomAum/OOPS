@@ -1,0 +1,10 @@
+class Order:
+    def __init__(self,date,status) -> None:
+        self.date= date
+        self.status = status
+
+        def calc_tax(self):
+            pass
+        def cal_total(srlf):
+            pass
+        def cal_total_weight(self):
