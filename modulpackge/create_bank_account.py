@@ -14,5 +14,5 @@ paul_acc.open_account(paul.name,'Saving','0123-45678',500)
 #แสดงข้อมูลของ customer paul
 print(paul.cus_info())
 
-#แสดงข้อมูลเงินคงเหลือของ paul
+#แสดงข้อมูลเงินคงเหลือของ paulus
 print(paul_acc.display_balance())
