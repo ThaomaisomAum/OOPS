@@ -28,3 +28,4 @@ class Area:
     def compute_area(self):
         return 0.5 * self.base * self.high
         #หรือ return 0.5 * self.__base * self.__high
+        
