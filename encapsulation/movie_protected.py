@@ -34,8 +34,3 @@ if __name__ == '__main__':
     movie1._get_movie_detail() #ไม่มีข้อมูลของ channel
     print(f"channel = {movie1.channel}")
     print(f"rating = {movie1._rating}")
-
-
-
-   
-    
