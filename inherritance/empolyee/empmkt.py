@@ -1,6 +1,6 @@
 from empolyee import Employee
 
-class (Employee):
+class(Employee):
     def __init__(self, id, name, salary) -> None:
         super().__init__(id, name, salary)
         self.location = 'Bangkok'
