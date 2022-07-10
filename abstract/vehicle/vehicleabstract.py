@@ -1,3 +1,6 @@
+# 1
+#ตัวอย่างสอบ final (85)
+##class
 from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
@@ -10,4 +13,3 @@ class Vehicle(ABC):
     @abstractmethod
     def show_detail(self):
         pass
-
