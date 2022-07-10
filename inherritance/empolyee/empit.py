@@ -16,7 +16,7 @@ class EmpIT(Employee):
     def add_experience(self,exp:str):
         self.experience = exp
 
-    def emp_detail(delf):
+    def emp_detail(self):
         super().emp_datail() #หากไม่ต้องการทid,name ก็ไม่ต้องมี super().emp_datail()
         print(f'skill: {self.skill}')
         print(f'experience: {self.experience}')
